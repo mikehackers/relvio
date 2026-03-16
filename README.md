@@ -61,6 +61,11 @@ Both files are listed in `.gitignore` and will not be tracked by git.
 - Python 3.10+
 - A Google account
 
+**macOS users:** If you see `xcrun: error: invalid active developer path`, run:
+```bash
+xcode-select --install
+```
+
 ## Project structure
 
 ```
