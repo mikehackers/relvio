@@ -9,7 +9,7 @@ Track relationships, set follow-up reminders, monitor relationship health, and i
 ## Quickstart
 
 ```bash
-git clone https://github.com/b-kifle/relvio.git
+git clone https://github.com/relvio/relvio.git
 cd relvio
 make install
 make run
@@ -79,7 +79,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Bugs
 
-Found a bug? [Open an issue](https://github.com/b-kifle/relvio/issues).
+Found a bug? [Open an issue](https://github.com/relvio/relvio/issues).
 
 ## License
 
