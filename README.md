@@ -9,7 +9,7 @@ Track relationships, set follow-up reminders, monitor relationship health, and i
 ## Quickstart
 
 ```bash
-git clone https://github.com/b-kifle/relvio.git
+git clone https://github.com/relvio-ai/relvio.git
 cd relvio
 make install
 make run
