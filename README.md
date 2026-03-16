@@ -84,7 +84,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Bugs
 
-Found a bug? [Open an issue](https://github.com/b-kifle/relvio/issues).
+Found a bug? [Open an issue](https://github.com/relvio-ai/relvio/issues).
 
 ## License
 
