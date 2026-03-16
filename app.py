@@ -1,5 +1,5 @@
 """
-app.py - Orbit CRM web dashboard
+app.py - Relvio web dashboard
 Run: make run  →  http://localhost:5000
 """
 

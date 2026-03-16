@@ -1,16 +1,16 @@
-# Orbit CRM
+# Relvio
 
 A local-first personal CRM that builds your contact list from Gmail. No cloud, no subscription, no data leaves your machine.
 
 Track relationships, set follow-up reminders, monitor relationship health, and import LinkedIn connections — all from a single dashboard backed by a local SQLite database.
 
-![Orbit CRM contact list](screenshot.png)
+![Relvio contact list](screenshot.png)
 
 ## Quickstart
 
 ```bash
-git clone https://github.com/b-kifle/orbit-crm.git
-cd orbit-crm
+git clone https://github.com/b-kifle/relvio.git
+cd relvio
 make install
 make run
 ```
@@ -29,11 +29,11 @@ The in-app setup wizard walks you through everything. You'll need:
 
 2. **Paste your Client ID and Client Secret** into the setup page and click **Connect Gmail**
 
-That's it. Orbit opens a Google sign-in page, you authorize read-only access, and your contacts start syncing.
+That's it. Relvio opens a Google sign-in page, you authorize read-only access, and your contacts start syncing.
 
 ## How it works
 
-Orbit connects to your Gmail (read-only) and scans your inbox to identify real people you've exchanged emails with. It extracts names, email addresses, and conversation subjects, filtering out newsletters, notifications, and automated senders. Everything is stored in a local SQLite file (`crm.db`).
+Relvio connects to your Gmail (read-only) and scans your inbox to identify real people you've exchanged emails with. It extracts names, email addresses, and conversation subjects, filtering out newsletters, notifications, and automated senders. Everything is stored in a local SQLite file (`crm.db`).
 
 The dashboard lets you:
 - **Tag contacts** by relationship (investor, classmate, advisor, etc.)
@@ -47,7 +47,7 @@ Gmail syncs automatically in the background every 6 hours while the app is runni
 
 ## Privacy & Security
 
-All data stays on your machine. No analytics, no telemetry, no external servers. The Gmail connection is read-only — Orbit cannot send emails or modify your inbox.
+All data stays on your machine. No analytics, no telemetry, no external servers. The Gmail connection is read-only — Relvio cannot send emails or modify your inbox.
 
 **Sensitive files that are generated locally and must never be shared or committed:**
 
@@ -79,11 +79,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Bugs
 
-Found a bug? [Open an issue](https://github.com/b-kifle/orbit-crm/issues).
-
-## Author
-
-Built by [Bruke Kifle](https://github.com/b-kifle).
+Found a bug? [Open an issue](https://github.com/b-kifle/relvio/issues).
 
 ## License
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orbit — Contacts</title>
+  <title>Relvio — Contacts</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -26,7 +26,7 @@
     }
 
     /* ── Dark mode (default) ── */
-    .orbit-app {
+    .relvio-app {
       --bg: #0d0d0d;
       --surface1: #111111;
       --surface2: #161616;
@@ -79,7 +79,7 @@
     }
 
     /* ── Light mode ── */
-    .orbit-app.light {
+    .relvio-app.light {
       --bg: #f5f4f0;
       --surface1: #ffffff;
       --surface2: #f0efeb;
@@ -119,8 +119,8 @@
       --backdrop: rgba(0,0,0,0.1);
     }
 
-    .orbit-app.light ~ style,
-    .orbit-app.light { }
+    .relvio-app.light ~ style,
+    .relvio-app.light { }
 
     /* ── Topbar ── */
     .topbar {
@@ -1208,10 +1208,10 @@
     .source-badge.manual { background: #1f1a0d; color: #C4953A; }
 
     /* light mode source badges */
-    .orbit-app.light .source-badge.gmail { background: #f0ecf5; color: #6B5EA4; }
-    .orbit-app.light .source-badge.linkedin { background: #e8f0f8; color: #2B6FA4; }
-    .orbit-app.light .source-badge.both { background: #ecf5ec; color: #3B8A3B; }
-    .orbit-app.light .source-badge.manual { background: #f5f0e8; color: #A4753A; }
+    .relvio-app.light .source-badge.gmail { background: #f0ecf5; color: #6B5EA4; }
+    .relvio-app.light .source-badge.linkedin { background: #e8f0f8; color: #2B6FA4; }
+    .relvio-app.light .source-badge.both { background: #ecf5ec; color: #3B8A3B; }
+    .relvio-app.light .source-badge.manual { background: #f5f0e8; color: #A4753A; }
 
     /* Import progress bar */
     .import-progress {
@@ -1243,7 +1243,7 @@
 </head>
 <body>
 
-<div class="orbit-app" id="orbit-app">
+<div class="relvio-app" id="relvio-app">
 
   {% if not gmail_connected %}
   <div style="background:#1a1510;border:1px solid #3a2e0d;border-radius:8px;padding:14px 20px;margin:12px 16px 0;display:flex;align-items:center;gap:10px;">
@@ -1655,7 +1655,7 @@
 
   // ── Mode toggle ──
   function toggleMode() {
-    const app  = document.getElementById('orbit-app');
+    const app  = document.getElementById('relvio-app');
     const sun  = document.getElementById('icon-sun');
     const moon = document.getElementById('icon-moon');
     app.classList.toggle('light');
@@ -1663,10 +1663,10 @@
     sun.style.display  = isLight ? 'none' : '';
     moon.style.display = isLight ? ''     : 'none';
     document.body.style.background = isLight ? '#e8e7e3' : '#080808';
-    localStorage.setItem('orbit-mode', isLight ? 'light' : 'dark');
+    localStorage.setItem('relvio-mode', isLight ? 'light' : 'dark');
   }
 
-  if (localStorage.getItem('orbit-mode') === 'light') toggleMode();
+  if (localStorage.getItem('relvio-mode') === 'light') toggleMode();
 
   // ── Row click behavior ──
   function openContactRow(row) {
